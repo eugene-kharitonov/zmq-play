@@ -18,7 +18,7 @@ The learner's process:
  - Publish (non-blocking) it to the learners,
  - Repeat
 
-To demonstrate robustness, actor-0 kills his own process after epoch 1
+To demonstrate the robustness, actor-0 kills his own process after epoch 2.
 """
 
 def actor(actor_id, model_port, trajectory_port):
