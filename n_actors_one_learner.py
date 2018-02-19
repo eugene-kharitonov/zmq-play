@@ -51,6 +51,7 @@ def actor(actor_id, model_port, trajectory_port):
             _log('No new model, continue using old one...')
         _log("Generating trajectory using model from epoch {}".format(model[
             'epoch']))
+        # "generating" a trajectory, i.e. playing a game
         time.sleep(2)
         n_trajectories += 1
         _log("Sending the trajectory over")
@@ -89,6 +90,7 @@ def learner(model_port, trajectory_port):
             trajectories_read += 1
         print('[learner] Read {} trajectories in total'.format(
             trajectories_read))
+        # "training" on the batch
         time.sleep(10)
 
 
