@@ -9,7 +9,7 @@ A set of actors processes wake up, initialise the start model via a common rando
 and start the following proceess:
  - Non-blocking check if any new models are available, if so, update the local one;
  - Play a game,
- - Publicsh the observed trajectory to the learner.
+ - Publish the observed trajectory to the learner (non-blocking)
  - Repeat.
 
 The learner's process:
